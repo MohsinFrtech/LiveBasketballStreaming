@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/event"
+        android:title="Streaming"
+        android:icon="@drawable/live_streaming"
+        />
+
+    <item
+        android:id="@+id/scoreMatchesFragment"
+        android:title="Scores"
+        android:icon="@drawable/live_scores"
+        />
+    <item
+        android:id="@+id/leagueFragment"
+        android:icon="@drawable/leagues"
+        android:title="Leagues"
+        />
+
+
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/more"
+        android:title="More"
+        />
+
+</menu>

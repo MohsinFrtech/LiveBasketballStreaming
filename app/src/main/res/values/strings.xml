@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Live Basketball Streaming &amp; Scores</string>
+    <string name="popular_games">Recommended</string>
+    <string name="admob_banner">ca-app-pub-3940256099942544/630032</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="games">Games</string>
+    <string name="noLive2">No Recommended channel available to show.</string>
+    <string name="popular_channels">Popular Events</string>
+    <string name="noGame">No Popular Event available to show</string>
+    <string name="appName">Live Basketball Streaming</string>
+
+    <string name="link"> Terms &amp; Condition </string>
+
+
+    <string name="my_string">Liv<span style="text-transform: uppercase;">e</span> Football.</string>
+
+    <string name="value">2.3.0</string>
+    <string name="notificationText">Currently no notification available to show.</string>
+    <string name="clear">Clear All</string>
+    <string name="cpp_file_error">Something went wrong. please restart your phone to use the app</string>
+
+
+
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="no_internet_string">Internet connection lost! , please check your internet connection.</string>
+    <string name="retry">Retry</string>
+    <string name="home">Home</string>
+
+    <string name="againVal">Something went wrong,Please retry.</string>
+    <string name="facebook_app_id"></string>
+
+    <string name="notifications">Notifications</string>
+    <string name="more">More</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share">Share</string>
+    <string name="terms_condition">Privacy Policy</string>
+    <string name="yes">liveIcon</string>
+    <string name="playerLive">Live</string>
+    <string name="lockIcon">lockIcon</string>
+    <string name="pauseIcon">pauseIcon</string>
+    <string name="search_live_channels">Search here</string>
+    <string name="screenModeIcon">screenModeIcon</string>
+    <string name="playerStretch">Stretch</string>
+    <string name="volume">volume</string>
+    <string name="cast">Cast</string>
+    <string name="menuIcon">menuIcon</string>
+    <string name="searchIcon">searchIcon</string>
+    <string name="cancelIcon">cancelIcon</string>
+    <string name="gameImage">game</string>
+    <string name="live">Live</string>
+    <string name="noLive">No channel available to show.</string>
+    <string name="backIcon">backIcon</string>
+    <string name="navigate">navigate</string>
+    <string name="channelImage">channelImage</string>
+    <string name="version">New version available</string>
+    <string name="appUpdate">Please, update to new version to continue reposting.</string>
+    <string name="noThanks">No,Thanks</string>
+    <string name="Up">Update</string>
+    <string name="adblock">We detected ad blocker running on your device.Please disable adblocker and then use our app.</string>
+    <string name="Exit">Exit</string>
+    <string name="ad_Blocker">adBlocker</string>
+    <string name="usb_debugging">Please Disable \"USB Debugging\" from your phone to use the app.</string>
+
+
+
+    <!--    Splash Screen layout-->
+    <string name="Allow">Get Notified about the latest updates,and upcoming matches to stay ahead of the games. Sound Great?!</string>
+    <string name="skip">Yes,Notify me</string>
+    <string name="allow_text">Turn on Notification</string>
+    <string name="stringValue">Later</string>
+
+
+
+    <!--    more Screen layout-->
+    <string name="app_rating">App Rating..</string>
+    <string name="rate">Rate</string>
+    <string name="notified">Notifications</string>
+    <string name="noLiveEvent">No live event available to show.</string>
+    <string name="event_txt">Events</string>
+    <string name="categories_txt">Categories</string>
+    <string name="more_txt">More Options</string>
+    <string name="app_version">App Version</string>
+    <string name="get_support">Get Support</string>
+    <string name="writeReview">Write a Review</string>
+    <string name="share_app">Share App</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="Terms">terms</string>
+    <string name="listDescription">listIcon</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedbackText">Let us know if you have an issue or an idea.</string>
+    <string name="rateAppText">Rate the App</string>
+    <string name="rateAppTexting">Let us know what you think in Google Play Store.</string>
+    <string name="shareApp">Share the App</string>
+    <string name="shareAppText">Share the app with other football lovers.</string>
+    <string name="termsText">Get the Alerts for Latest Updates</string>
+    <string name="forward">forward</string>
+    <string name="appText">%1$s%2$s %3$s</string>
+    <string name="noEvent">No Live Event available to show.</string>
+    <string name="noMatch">No Live Matches available to show.</string>
+
+    <!--    match info layout-->
+    <string name="matchInfo">Match Info</string>
+    <string name="dot">Dot</string>
+    <string name="match_not_started_yet">Match Not Started Yet!</string>
+    <string name="team">Team</string>
+    <string name="one">Q1</string>
+    <string name="two">Q2</string>
+    <string name="three">Q3</string>
+    <string name="four">Q4</string>
+    <string name="five">5</string>
+    <string name="total">T</string>
+
+
+
+
+
+    <!--     Subscription Screen-->
+
+    <string name="text_discount">Save</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="packages_month">1 Month</string>
+    <string name="remove_all_ads">Remove all kinds of ads in the.</string>
+    <string name="subs_now">Subscribe Now</string>
+    <string name="available_packages">Available Packages</string>
+    <string name="no_packages">No Packages available to show.</string>
+
+
+
+<!--     leagues & countries-->
+
+    <string name="country">Countries</string>
+    <string name="league">Leagues</string>
+    <string name="league_image">League Image</string>
+    <string name="noLeague">No Data available to show.</string>
+
+    <string-array name="standings">
+        <item>Matches</item>
+        <item>Teams</item>
+        <item>Standings</item>
+    </string-array>
+    <string name="basketball">National basketball league</string>
+
+</resources>

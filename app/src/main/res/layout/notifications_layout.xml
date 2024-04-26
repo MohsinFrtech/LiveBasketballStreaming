@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <data>
+
+    </data>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainAppBackGround"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/new2_draw"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/subAppBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/backIcon2"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/back_latest"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:contentDescription="@string/backIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:text="@string/notifications"
+                android:id="@+id/eventNameChannel"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:layout_constraintStart_toEndOf="@+id/backIcon2"
+                app:layout_constraintTop_toTopOf="@+id/backIcon2"
+                app:layout_constraintBottom_toBottomOf="@+id/backIcon2"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:text="@string/clear"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/clear"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="@+id/backIcon2"
+                app:layout_constraintBottom_toBottomOf="@+id/backIcon2"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subAppBar"
+            android:layout_below="@+id/subAppBar"
+            android:layout_height="0sp"
+            android:id="@+id/notification_recycler">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/no_notification_available"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:contentDescription="@string/notifications"
+                android:layout_height="100dp"
+                android:src="@drawable/notification1"
+                app:tint="@color/textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:text="@string/notificationText"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

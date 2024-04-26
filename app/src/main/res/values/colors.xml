@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#001673</color>
+    <color name="colorAccent">#004BAA</color>
+    <color name="colorPrimary">#004BAA</color>
+    <color name="textColor">#FF000000</color>
+    <color name="color_transparent">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cardColor">#6685B0BE</color>
+
+    <color name="gray">#A9A9A9</color>
+    <color name="mainBackground">#ffffff</color>
+    <color name="mainAppBackGround">#001673</color>
+    <color name="red">#801424</color>
+
+
+</resources>

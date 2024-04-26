@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_teams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firstPart"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/scoreSection"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/rankId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/team_logo"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginStart="8sp"
+                android:contentDescription="@string/appName"
+                app:layout_constraintStart_toEndOf="@+id/rankId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/app_icon" />
+
+            <TextView
+                android:id="@+id/teamName"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="0sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/team_logo"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scoreSection"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/firstPart"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/team_points"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@+id/team_win"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/team_win"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@+id/team_lose"
+                app:layout_constraintStart_toEndOf="@+id/team_points"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/team_lose"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@+id/team_diff"
+                app:layout_constraintStart_toEndOf="@+id/team_win"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/team_diff"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@+id/team_pct"
+                app:layout_constraintStart_toEndOf="@+id/team_lose"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/team_pct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/team_diff"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

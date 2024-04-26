@@ -1,0 +1,171 @@
+{
+  "project_info": {
+    "project_number": "1077052995434",
+    "firebase_url": "https://faisal-project-streaming-app.firebaseio.com",
+    "project_id": "faisal-project-streaming-app",
+    "storage_bucket": "faisal-project-streaming-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077052995434:android:a08df845ec0b334a621713",
+        "android_client_info": {
+          "package_name": "com.abr.ha.live.soccer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzJXXNJs8-4ONq0_KkjaOIt2W2vFWSIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077052995434-su0sckqsgo0iedsjid3rruh9qm2nfi63.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hug.live.cricket.tv"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077052995434:android:2e4ab96b39f870d8621713",
+        "android_client_info": {
+          "package_name": "com.depvt.live.football.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzJXXNJs8-4ONq0_KkjaOIt2W2vFWSIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077052995434-su0sckqsgo0iedsjid3rruh9qm2nfi63.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hug.live.cricket.tv"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077052995434:android:f6362688ba307b7a",
+        "android_client_info": {
+          "package_name": "com.sports.live.cricket.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077052995434-bukjbo675l63qr4srup6cosringc8ss7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sports.live.cricket.tv",
+            "certificate_hash": "f2ddcd61d1dc9c8d579ac27b85923084bb6de66d"
+          }
+        },
+        {
+          "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzJXXNJs8-4ONq0_KkjaOIt2W2vFWSIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077052995434-su0sckqsgo0iedsjid3rruh9qm2nfi63.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hug.live.cricket.tv"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077052995434:android:a29fb53c0da788b0",
+        "android_client_info": {
+          "package_name": "com.sports.live.football.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077052995434-e73ni4spsf10o212f0fb6h1ejegmdq5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sports.live.football.tv",
+            "certificate_hash": "f2ddcd61d1dc9c8d579ac27b85923084bb6de66d"
+          }
+        },
+        {
+          "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzJXXNJs8-4ONq0_KkjaOIt2W2vFWSIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077052995434-igcm785fsvlm969ql5c9klmtv67j4jnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1077052995434-su0sckqsgo0iedsjid3rruh9qm2nfi63.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hug.live.cricket.tv"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

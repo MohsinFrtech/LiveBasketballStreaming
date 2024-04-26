@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.depvt.live.football.tv.viewModel.OneViewModel" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainAppBackGround"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:onRefreshListener="@{()->model.onRefreshFixtures()}"
+        app:refreshing="@{model.isLoading}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new2_draw"
+                android:elevation="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/cancelIconEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:contentDescription="@string/cancelIcon"
+                    android:src="@drawable/cancel"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/appTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/appTitle">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/appTitle"
+                    android:layout_width="0sp"
+                    android:layout_height="60sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/titlebar_logo"
+                    app:layout_constraintBottom_toTopOf="@+id/search_lay"
+                    app:layout_constraintEnd_toStartOf="@id/bellIcon"
+                    app:layout_constraintStart_toEndOf="@id/searchIconEvent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/searchIconEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:contentDescription="@string/searchIcon"
+                    android:src="@drawable/search"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/appTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/appTitle" />
+
+
+                <ImageView
+                    android:id="@+id/bellIcon"
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:contentDescription="@string/notifications"
+                    android:src="@drawable/notification1"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/appTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/appTitle" />
+
+                <RelativeLayout
+                    android:id="@+id/search_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/text_background"
+                    android:backgroundTint="@color/mainAppBackGround"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appTitle">
+
+                    <ImageView
+                        android:id="@+id/search_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/searchIcon"
+                        android:padding="@dimen/_7sdp"
+                        app:srcCompat="@drawable/search">
+
+                    </ImageView>
+
+                    <EditText
+                        android:id="@+id/eventEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/search_icon2"
+                        android:background="@drawable/text_background"
+                        android:hint="Search live streaming"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_11sdp">
+
+                    </EditText>
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_marginTop="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainTab" />
+
+
+            <LinearLayout
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:adSize="BANNER"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/fbAdView"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/unityBannerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <com.startapp.sdk.ads.banner.Banner
+                android:id="@+id/startAppBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/noEventText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noEvent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

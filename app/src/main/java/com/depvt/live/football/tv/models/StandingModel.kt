@@ -1,0 +1,5 @@
+package com.depvt.live.football.tv.models
+
+data class StandingModel(val teamPosition: Int?,val teamLogo: String?, val teamName: String?,val teamPoints:Int?,
+                         val teamWin:Int?,val teamLose:Int?,val teamDiff:Int?,
+                         val teamPct:String?)
